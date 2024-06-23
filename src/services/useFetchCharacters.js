@@ -1,11 +1,10 @@
 import { useState, useEffect } from 'react';
 
 export const useFetchCharacters = (searchQuery, pageNumber) => {
-
   const [characters, setCharacters] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
-
+  const [totalPages, setTotalPages] = useState(0);
 
   useEffect(() => {
     const fetchCharacters = async () => {
@@ -17,7 +16,9 @@ export const useFetchCharacters = (searchQuery, pageNumber) => {
           `https://swapi.dev/api/people/?search=${searchQuery}&page=${pageNumber}`
         );
         const data = await response.json();
+        console.log('respuesta de la api', data); // <-------------
         setCharacters(data.results);
+        setTotalPages(Math.ceil(data.count / 10));
       } catch (err) {
         setError(err.message);
       } finally {
@@ -28,5 +29,5 @@ export const useFetchCharacters = (searchQuery, pageNumber) => {
     fetchCharacters();
   }, [searchQuery, pageNumber]);
 
-  return { characters, isLoading, error };
+  return { characters, isLoading, error, totalPages };
 };

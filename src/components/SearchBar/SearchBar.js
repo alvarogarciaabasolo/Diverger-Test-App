@@ -1,22 +1,25 @@
-import React, { useState } from 'react'
-import {useFetchCharacters} from '../../services/useFetchCharacters'
-export const SearchBar = () => {
-  const [query, setQuery] = useState()
-  const { characters, isLoading, error } = useFetchCharacters(query, 1);
-console.log(characters)
+import React, { useState } from 'react';
 
-  const handleInputChange = (evt) =>{
-    setQuery(evt.target.value)
-  }
+export const SearchBar = ({onSearch}) => {
+  const [query, setQuery] = useState('');
+
+  const handleInputChange = (evt) => {
+    setQuery(evt.target.value);
+  };
+
+  const handleSearch = () => {
+    onSearch(query)
+  };
+
   return (
     <div>
-      <input 
-      type='text'
-      placeholder='Search for a character...'
-      value={query}
-      onChange={handleInputChange}
+      <input
+        type="text"
+        placeholder="Search for a character..."
+        value={query}
+        onChange={handleInputChange}
       />
-      <button>Search</button>
+      <button onClick={handleSearch}>Search</button>
     </div>
-  )
-}
+  );
+};
