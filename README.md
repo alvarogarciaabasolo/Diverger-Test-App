@@ -1,7 +1,5 @@
 # Star Wars React App
 
-**⚠️ Proyecto en proceso**
-
 ## Descripción
 
 Este proyecto es una aplicación web frontend desarrollada en React que muestra información sobre los personajes de la saga de Star Wars.
