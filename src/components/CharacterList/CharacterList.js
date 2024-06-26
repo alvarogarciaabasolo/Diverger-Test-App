@@ -2,11 +2,12 @@ import React, { useState } from 'react';
 import { SearchBar } from '../SearchBar/SearchBar';
 import { useFetchCharacters } from '../../services/useFetchCharacters';
 import { Pagination } from '../Pagination/Pagination';
+import { useNavigate } from 'react-router-dom';
 
 export const CharacterList = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [pageNumber, setPageNumber] = useState(1);
-
+const navigate = useNavigate()
   const { characters, isLoading, error, totalPages } = useFetchCharacters(
     searchQuery,
     pageNumber
@@ -19,6 +20,10 @@ export const CharacterList = () => {
     setPageNumber(1);
   };
 
+  const handleRouter = () => {
+    navigate('/CharacterCard', {state:{characters:characters}})
+  }
+
   return (
     <div>
       <SearchBar onSearch={handleSearch} />
@@ -28,7 +33,7 @@ export const CharacterList = () => {
       <div>
         {characters.map((character) => (
           <ul key={character.url}>
-            <li>{character.name}</li>
+            <li onClick={handleRouter}>{character.name}</li>
           </ul>
         ))}
       </div>
