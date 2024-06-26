@@ -3,18 +3,13 @@ import { createGlobalStyle } from 'styled-components';
 const GlobalStyled = createGlobalStyle`
 
  :root {
-  --color-PrimaryPurple: #AD1FEA;
---color-SecondaryBlue: #4661E6;
---color-LightSkyBlue: #62BCFA;  
---color-SkyBlue: #7C91F9;  
---color--Purple:#C75AF6;
+--color-Black: #000000;
 --color-White: #FFFFFF; 
---color-MidnightBlue: #3A4374; 
---color-SoftBlueGrey: #647196; 
---color-GrayLight:#8C92B3;
---color-Coral: #F49F85;  
---color-Red: #D73737;  
+--color-BrightYellow: #feda4a;
+--color-LighterYellow: #ffeb3b;
+
  }
+ 
 * { 
   margin:0;
   padding:0;
@@ -22,8 +17,15 @@ const GlobalStyled = createGlobalStyle`
   
 }
 body {
-  font-family: 'Jost', sans-serif;
-  background: var(--color-VeryLightGrey);
-}
+    background-color: black;
+    color: white;
+    font-family: 'Star Jedi', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+h1, h2, h3, h4, h5, h6, p, li {
+    color: white;
+  }
 `;
 export default GlobalStyled;

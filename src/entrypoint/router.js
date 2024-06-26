@@ -6,7 +6,7 @@ export const router = createBrowserRouter(
   createRoutesFromElements(
     <>
     <Route
-      path="/home"
+      path="/"
       element={<Home />}
     />
     <Route

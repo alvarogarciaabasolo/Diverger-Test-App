@@ -30,9 +30,10 @@ Este proyecto es una aplicación web frontend desarrollada en React que muestra 
 1. Clona el repositorio:
    ```bash
    git clone https://github.com/tu-usuario/star-wars-react-app.git
-   cd star-wars-react-app```
+   
+   cd star-wars-react-app
 2. Instala las dependencias
-```bash npm install```
+```npm install```
 
 ## Scripts Disponibles
 
