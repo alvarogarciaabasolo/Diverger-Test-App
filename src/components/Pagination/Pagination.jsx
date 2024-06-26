@@ -1,10 +1,10 @@
-import React from 'react';
 import {
   PaginationContainer,
   PaginationButton,
 } from './style/Pagination.styled.js';
 
 export const Pagination = ({ setPageNumber, pageNumber, totalPages }) => {
+  
   const handlePrevious = () => {
     setPageNumber(pageNumber - 1);
   };

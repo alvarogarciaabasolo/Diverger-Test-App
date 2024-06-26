@@ -13,7 +13,7 @@ export const DetailListTitle = styled.h2`
 
 export const DetailListItems = styled.ul`
   list-style-type: none;
-
+font-family: sans-serif;
   li {
     margin-bottom: 5px;
   }

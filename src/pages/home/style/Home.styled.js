@@ -12,5 +12,4 @@ export const ConteinerApp = styled.main`
 export const Title = styled.h1`
   color: var(--color-White);
   font-size: 100px;
-  font-family: 'StarJedi', sans-serif;
 `;

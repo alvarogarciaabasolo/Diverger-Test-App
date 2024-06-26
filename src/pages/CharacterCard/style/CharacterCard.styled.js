@@ -29,6 +29,7 @@ export const CardDetail = styled.p`
   background-color: #2e2e2e;
   padding: 5px 10px;
   border-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif;
 `;
 export const Loading = styled.p`
   color: var(--color-BrightYellow);

@@ -43,9 +43,7 @@ Este proyecto es una aplicación web frontend desarrollada en React que muestra 
 1. Clona el repositorio:
    ```bash
    git clone https://github.com/alvarogarciaabasolo/Diverger-Test-App.git
-   ```
-
-cd Diverger-Test-App
+   ```cd Diverger-Test-App
 
 2. Instala las dependencias
    `npm install`

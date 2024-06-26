@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { SearchInput, SearchButton } from './style/SearchBar.styled.js';
 
 export const SearchBar = ({ onSearch }) => {
@@ -22,7 +22,7 @@ export const SearchBar = ({ onSearch }) => {
     <>
       <SearchInput
         type="text"
-               placeholder="Search in the Star Wars library.."
+        placeholder="Search in the Star Wars library.."
         value={query}
         onChange={handleInputChange}
         onKeyDown={handleKeyDown}  

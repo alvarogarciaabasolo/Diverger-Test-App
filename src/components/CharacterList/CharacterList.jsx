@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { SearchBar } from '../SearchBar/SearchBar';
 import { useFetchCharacters } from '../../services/useFetchCharacters';
 import { Pagination } from '../Pagination/Pagination';
