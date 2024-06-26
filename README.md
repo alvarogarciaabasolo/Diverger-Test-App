@@ -13,6 +13,19 @@ Este proyecto es una aplicación web frontend desarrollada en React que muestra 
 - Paginación para navegar entre los personajes.
 - Buscador para filtrar personajes.
 
+## Vistas de la aplicación
+
+### Lista de personajes
+
+- En esta vista, se muestra una lista paginada de los personajes de Star Wars.
+- Cada personaje está representado por su nombre
+- Los usuarios pueden usar el buscador para filtrar personajes por nombre.
+
+### Información detallada del personaje
+
+- Al hacer clic en un personaje de la lista, se navega a una vista detallada.
+- En esta vista, se muestra información más detallada sobre el personaje, incluyendo datos adicionales como su altura, peso, género, entre otros.
+
 ## Tecnologías Utilizadas
 
 - React: Biblioteca de JavaScript para construir interfaces de usuario.
@@ -29,11 +42,13 @@ Este proyecto es una aplicación web frontend desarrollada en React que muestra 
 
 1. Clona el repositorio:
    ```bash
-   git clone https://github.com/tu-usuario/star-wars-react-app.git
-   
-   cd star-wars-react-app
+   git clone https://github.com/alvarogarciaabasolo/Diverger-Test-App.git
+   ```
+
+cd Diverger-Test-App
+
 2. Instala las dependencias
-```npm install```
+   `npm install`
 
 ## Scripts Disponibles
 
@@ -52,5 +67,3 @@ Inicia el corredor de pruebas en el modo de observación interactiva.\
 
 Construye la aplicación para producción en la carpeta `build`.\
 Agrupa correctamente React en modo de producción y optimiza la compilación para obtener el mejor rendimiento.
-
-
